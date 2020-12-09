@@ -15,6 +15,7 @@ img{
   max-width: 600px;
   object-fit: scale-down;
   border-radius: 11px;
+  text-align: center;
 }
 
 p{
@@ -55,9 +56,11 @@ h2{
   font-family: 'Krona One', sans-serif;
 }
 
-sub, sup {vertical-align: baseline; position: relative; font-size: 70%;} /* 70% size of its parent element font-size which is good. */
-sub {bottom: -0.6em;} /* use em becasue they adapt to parent font-size */
-sup {top: -0.6em;} /* use em becasue they adapt to parent font-size */
+.cover{
+  margin-top: 50px;
+  margin-left: 50%;
+  text-align: center;
+}
 
 .hashtag {
   display: none;
