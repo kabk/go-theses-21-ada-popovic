@@ -55,6 +55,10 @@ h2{
   font-family: 'Krona One', sans-serif;
 }
 
+sub, sup {vertical-align: baseline; position: relative; font-size: 70%;} /* 70% size of its parent element font-size which is good. */
+sub {bottom: -0.6em;} /* use em becasue they adapt to parent font-size */
+sup {top: -0.6em;} /* use em becasue they adapt to parent font-size */
+
 .hashtag {
   display: none;
 }
