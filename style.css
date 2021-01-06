@@ -1,67 +1,29 @@
-
 body {
-  background-color: lightgrey;
-  background-image: linear-gradient(lightblue, lightgreen);
-  font-size: 15px;
-  --contentWidth: 50%;
-  max-width: var(--contentWidth);
-  font-family: sans-serif;
-  overflow-x: hidden;
-  margin-left: 150px;
+  position: absolute;
+  word-break: break-word;
+  overflow: auto;
+  text-decoration: none;
+  margin-left: 3%;
+  margin-right: 3%;
+  background-image: url(https://i.pinimg.com/736x/33/08/8a/33088a684f8af83e6b6be61828190a7b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: inline-block;
 }
 
-img{
-  height: 300px;
-  max-width: 600px;
-  object-fit: scale-down;
-  border-radius: 11px;
-  text-align: center;
+img {
+  width: 100%;
 }
 
-p{
-  /* margin-left: 100px; */
-  color: linear-gradient(red, green);
+h4 {
+  font-size: 2vw;
 }
 
-td{
-  color: grey;
+h6 {
+  font-size: 5vw;
 }
 
-h1{
-  color: transparent;
-  -webkit-text-stroke: 2px black;
-  font-size: 40px;
-  text-align: center;
-  font-family: 'Krona One', sans-serif;
-  background-color: white;
-}
-
-h5{
-  color: black;
-  font-style: light;
-  font-size: 15px;
-  text-align: center;
-  margin:0;
-  padding:0;
-  font-family: sans-serif;
-  background-color: white;
-}
-
-h2{
-  color: transparent;
-  -webkit-text-stroke: 2px black;
-  margin-top: 150px;
-  font-size: 35px;
-  text-align: center;
-  font-family: 'Krona One', sans-serif;
-}
-
-.cover{
-  margin-top: 50px;
-  margin-left: 50%;
-  text-align: center;
-}
-
-.hashtag {
-  display: none;
-}
+#wrap { width: 100%; height: 500px; padding: 0; overflow: hidden; }
+#frame { width: 100%; height: 600px; border: 1px solid black; }
+#frame { zoom: 0.8; -moz-transform: scale(0.8); -moz-transform-origin: 0 0; }
