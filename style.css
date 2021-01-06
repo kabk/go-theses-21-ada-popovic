@@ -1,29 +1,214 @@
 body {
-  position: absolute;
+  width:100vw;
+  position: relative;
   word-break: break-word;
   overflow: auto;
   text-decoration: none;
-  margin-left: 3%;
-  margin-right: 3%;
-  background-image: url(https://i.pinimg.com/736x/33/08/8a/33088a684f8af83e6b6be61828190a7b.jpg);
+  /* background-image: url(https://i.pinimg.com/736x/33/08/8a/33088a684f8af83e6b6be61828190a7b.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   display: inline-block;
+  font-family: Arial;
+  background-color: #eef2e9;
+  overflow-x: hidden;
 }
 
-img {
-  width: 100%;
+/* TITLE PAGE */
+
+.neumorphic {
+  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+
+  font-size: 5rem;
+  width: 90%;
+  height: 150px;
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 1.3rem;
+  display: flex;
+
+  justify-content: space-around;
+  margin-left: 3%;
+  align-items: center;
+  margin-top: 50px;
+
+}
+
+span{
+  color: #c8cebe;
+}
+
+/* TYPOGRAPHY */
+p{
+  font-size: 3vw;
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+h2 {
+  font-size: 4vw;
+    color: #006837;
+    background-color: #dde5ff
 }
 
 h4 {
   font-size: 2vw;
+    color: black;
 }
 
 h6 {
-  font-size: 5vw;
+  font-size: 1vw;
+  color: black;
 }
 
-#wrap { width: 100%; height: 500px; padding: 0; overflow: hidden; }
+figcaption {
+    font-size: 1.2vw;
+    color: black;
+}
+
+.epigraph {
+    font-size: 9vw;
+    color: #050566;
+}
+
+.aristotle {
+  color: black;
+  margin-left: 3%;
+  margin-top: -5%;
+  text-align: right;
+}
+
+/*BLOCKQUOTES
+They are supposed to be reminiscent of Are.na's text blocks*/
+ blockquote{
+   align-items: center;
+   background-color: white;
+   width: 800px;
+   height: 800px;
+   border: 5px solid lightgrey;
+   overflow-x: scroll;
+   color: green;
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+
+
+/* IMAGES
+General images has to be full width, but later the embeds and are.na screenshots have to be smaller or different in some way  */
+img {
+  width: 100%;
+  align-items: center;
+}
+
+/* FOOTNOTES */
+
+
+.footnote {
+    text-decoration: none;
+    color: #006837;
+    background-color: #006837;
+    padding: 0rem 5rem;
+    border-radius: 10px;
+    vertical-align:middle;
+    /* margin-left: 10px; */
+    /* margin-right: 5px; */
+}
+
+.footnote > sup {
+    vertical-align: super;
+
+    font-size: var(--font-size-smaller);
+}
+
+/*
+sup {
+  position: relative;
+        text-decoration: none;
+        top: -8px;
+        margin: 0 0 0 2px;
+    background-color: blue;
+    color: green;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: 0.3s;
+    vertical-align: baseline;
+    position: relative;
+    text-decoration: none;
+} */
+
+
+/* SLIDESHOW */
+
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* ROW DISPLAY */
+
+/* .column {
+  float: left;
+  width: 15%;
+  padding: 5px;
+}
+
+.row {
+  margin-left: 5%;
+} */
+
+.row {
+  float: right;
+  margin-left: 80%;
+  margin-top: -5%;
+  margin-bottom: 5%;
+  height: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* #iframe {
+    zoom: 3;
+} */
+
+/* #wrap { width: 100%; height: 500px; padding: 0; overflow: hidden; }
 #frame { width: 100%; height: 600px; border: 1px solid black; }
-#frame { zoom: 0.8; -moz-transform: scale(0.8); -moz-transform-origin: 0 0; }
+#frame { zoom: 0.8; -moz-transform: scale(0.8); -moz-transform-origin: 0 0; } */
