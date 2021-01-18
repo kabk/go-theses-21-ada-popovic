@@ -1,58 +1,127 @@
+@font-face {
+    font-family: 'editorial_newregular';
+    src: url('editorialnew-regular-webfont.woff2') format('woff2'),
+         url('editorialnew-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
+	background-color: white;
+}
+
 body {
   width:100vw;
-  position: relative;
   word-break: break-word;
   overflow: auto;
   text-decoration: none;
-  /* background-image: url(https://i.pinimg.com/736x/33/08/8a/33088a684f8af83e6b6be61828190a7b.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; */
-  display: inline-block;
-  font-family: Arial;
-  background-color: #eef2e9;
   overflow-x: hidden;
 }
 
-/* TITLE PAGE */
+/*////////////////////////////////*/
+/* INPUT FIELD ANIMATION */
+/*////////////////////////////////*/
+.box {
+	width: 94vw;
+	height: 24vw;
+	position: absolute;
+	display: block;
+	margin: 3vw;
+	background-color: red;
+}
 
-.neumorphic {
-  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
-    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
-  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
-    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+.box img{
+	width: 94vw;
+}
+/* Version with deleting*/
 
-  font-size: 5rem;
-  width: 90%;
-  height: 150px;
-  border-radius: 40px;
-  overflow: hidden;
-  padding: 1.3rem;
-  display: flex;
+.blink {
+  animation: blink 0.5s infinite;
+  display: none;
+}
 
-  justify-content: space-around;
-  margin-left: 3%;
-  align-items: center;
-  margin-top: 50px;
+@keyframes blink{
+  to { opacity: .0; }
+}
+
+.flex {
+	display: flex;
+}
+
+.header-sub-title {
+	margin-top: -32vw;
+	padding-left: 0%;
+	padding-top: 1%;
+  color: black;
+  font-family: sans-serif;
+  font-size: 8vw;
+}
+
+#placeholder {
+	color: #9a9a9a;
+	display: inline-block;
+}
+
+#cursor {
+	color: black;
+}
+
+
+/* Version with blinking cursor */
+
+/*
+.titles{
+	font-size: 10vw;
+	font-family: Arial;
 
 }
 
-span{
-  color: #c8cebe;
+[data-typer]:after {
+  content:"";
+  display: inline-block;
+  vertical-align: middle;
+  width:1px;
+  height:1em;
+  background: #000;
+          animation: caretPulsate 1s linear infinite;
+  -webkit-animation: caretPulsate 1s linear infinite;
 }
+@keyframes caretPulsate {
+  0%   {opacity:1;}
+  50%  {opacity:1;}
+  60%  {opacity:0;}
+  100% {opacity:0;}
+}
+@-webkit-keyframes caretPulsate {
+  0%   {opacity:1;}
+  50%  {opacity:1;}
+  60%  {opacity:0;}
+  100% {opacity:0;}
+} */
 
+
+/*////////////////////////////////*/
+/* TABLE OF CONTENT */
+/*////////////////////////////////*/
+
+
+/*////////////////////////////////*/
 /* TYPOGRAPHY */
+/*////////////////////////////////*/
+
 p{
   font-size: 3vw;
     color: black;
     margin-left: 3%;
     margin-right: 3%;
+		font-family: Arial;
 }
 
 h2 {
-  font-size: 4vw;
-    color: #006837;
-    background-color: #dde5ff
+	font-family: forma-djr-deck, sans-serif;
+	font-size: 7vw;
+	font-weight: 500;
 }
 
 h4 {
@@ -71,8 +140,9 @@ figcaption {
 }
 
 .epigraph {
-    font-size: 9vw;
-    color: #050566;
+    font-size: 7vw;
+		font-family: 'editorial_newregular';
+		text-align: center;
 }
 
 .aristotle {
@@ -123,92 +193,3 @@ img {
 
     font-size: var(--font-size-smaller);
 }
-
-/*
-sup {
-  position: relative;
-        text-decoration: none;
-        top: -8px;
-        margin: 0 0 0 2px;
-    background-color: blue;
-    color: green;
-    padding: 2px 4px;
-    border-radius: 4px;
-    transition: 0.3s;
-    vertical-align: baseline;
-    position: relative;
-    text-decoration: none;
-} */
-
-
-/* SLIDESHOW */
-
-.mySlides {display: none;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-/* ROW DISPLAY */
-
-/* .column {
-  float: left;
-  width: 15%;
-  padding: 5px;
-}
-
-.row {
-  margin-left: 5%;
-} */
-
-.row {
-  float: right;
-  margin-left: 80%;
-  margin-top: -5%;
-  margin-bottom: 5%;
-  height: 1%;
-}
-
-
-
-
-
-
-
-
-
-
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
-/* #iframe {
-    zoom: 3;
-} */
-
-/* #wrap { width: 100%; height: 500px; padding: 0; overflow: hidden; }
-#frame { width: 100%; height: 600px; border: 1px solid black; }
-#frame { zoom: 0.8; -moz-transform: scale(0.8); -moz-transform-origin: 0 0; } */
