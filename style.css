@@ -4,7 +4,22 @@
          url('editorialnew-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+font-family: UbuntuRegular, arial, sans-serif;
+}
+.test em {
+font-family: editorial_newregular, arial, sans-serif;
+font-style: normal;
+}
+.test strong {
+font-family: editorial_newregular, arial, sans-serif;
+font-weight: normal;
+}
+.test strong em {
+font-family: editorial_newregular, arial, sans-serif;
+font-style: normal;
+font-weight: normal;
 }
 
 html, body {
