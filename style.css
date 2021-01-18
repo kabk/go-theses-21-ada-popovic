@@ -6,22 +6,6 @@
     font-style: normal;
 }
 
-font-family: UbuntuRegular, arial, sans-serif;
-}
-.test em {
-font-family: editorial_newregular, arial, sans-serif;
-font-style: normal;
-}
-.test strong {
-font-family: editorial_newregular, arial, sans-serif;
-font-weight: normal;
-}
-.test strong em {
-font-family: editorial_newregular, arial, sans-serif;
-font-style: normal;
-font-weight: normal;
-}
-
 html, body {
 	background-color: white;
 }
@@ -135,8 +119,9 @@ p{
 
 h2 {
 	font-family: forma-djr-deck, sans-serif;
-	font-size: 7vw;
+	font-size: 8vw;
 	font-weight: 500;
+	margin-left: 3%;
 }
 
 h4 {
@@ -150,7 +135,7 @@ h6 {
 }
 
 figcaption {
-    font-size: 1.2vw;
+    font-size: 2vw;
     color: black;
 }
 
