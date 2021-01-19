@@ -1,19 +1,40 @@
+/* VARIABLES */
+
+:root {
+    --brown: #5f3b23;
+    --lila: #dee3f4;
+    --mint: #e5f3f2;
+    --darkgrey: #585858;
+    --lightgrey: #f3f3f3;
+
+    --forma: 'forma-djr-deck';
+    --text: 'Arial';
+    --serif:'Editorial New';
+}
+
+/* FONTS */
+
 @font-face {
-    font-family: 'editorial_newregular';
-    src: url('editorialnew-regular-webfont.woff2') format('woff2'),
-         url('editorialnew-regular-webfont.woff') format('woff');
+    font-family: 'Editorial New';
+    src:url('EditorialNew-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
+
+/* BASICS */
+
 
 html, body {
 	background-color: white;
+  scroll-behavior: smooth;
 }
 
 body {
-  width:100vw;
+  width:100%;
+  height: 100%;
   word-break: break-word;
-  overflow: auto;
+  /* overflow-y: hidden; */
   text-decoration: none;
   overflow-x: hidden;
 }
@@ -24,10 +45,9 @@ body {
 .box {
 	width: 94vw;
 	height: 24vw;
-	position: absolute;
+	position:relative;
 	display: block;
 	margin: 3vw;
-	background-color: red;
 }
 
 .box img{
@@ -104,24 +124,87 @@ body {
 /* TABLE OF CONTENT */
 /*////////////////////////////////*/
 
+div.navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-size: 20px;
+  margin-top: 15%;
+  height: 10vw;
+  width: 100%;
+  font-size: 8vw;
+  z-index: 30;
+  display: none;
+}
+
+.arenalink{
+  width: 20%;
+  height: 100%;
+  margin-left: 3%;
+  position: absolute;
+	display: block;
+  padding-top: 3%;
+  /* margin-top: 40%; */
+  font-size: 8vw;
+
+}
+
+.menu{
+  width: 20%;
+  height: 100%;
+  background-color: var(--brown);
+  padding-top: 3%;
+  margin-left: 77%;
+	display: inline-block;
+  font-size: 8vw;
+
+}
 
 /*////////////////////////////////*/
 /* TYPOGRAPHY */
 /*////////////////////////////////*/
 
+.epigraph {
+    font-size: 8vw;
+		font-family: var(--serif);
+    font-weight: normal;
+    font-style: normal;
+		text-align: center;
+		/* transform: skew(12deg); */
+		margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 0;
+    position: relative;
+    display: none;
+}
+
 p{
-  font-size: 3vw;
+  font-size: 2.5vw;
     color: black;
     margin-left: 3%;
     margin-right: 3%;
-		font-family: Arial;
+		font-family: var(--text);
 }
 
 h2 {
-	font-family: forma-djr-deck, sans-serif;
-	font-size: 8vw;
+  margin-top: 200%;
+	font-family: var(--forma);
+  line-height: 95%;
+	font-size: 12vw;
 	font-weight: 500;
-	margin-left: 3%;
+  text-align: center;
+}
+
+.transform {
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.bigmargin {
+  margin-top: 0%;
 }
 
 h4 {
@@ -139,31 +222,33 @@ figcaption {
     color: black;
 }
 
-.epigraph {
-    font-size: 7vw;
-		font-family: 'editorial_newregular';
-		text-align: center;
+/*////////////////////////////////*/
+/* EMBED */
+/*////////////////////////////////*/
+#iframe{
+  width:20%;
 }
 
-.aristotle {
-  color: black;
-  margin-left: 3%;
-  margin-top: -5%;
-  text-align: right;
-}
 
 /*BLOCKQUOTES
 They are supposed to be reminiscent of Are.na's text blocks*/
  blockquote{
    align-items: center;
    background-color: white;
+   border: 5px solid var(--lightgrey);
+
+   overflow-x: scroll;
    width: 800px;
    height: 800px;
-   border: 5px solid lightgrey;
-   overflow-x: scroll;
-   color: green;
-   padding-left: 15px;
-   padding-right: 15px;
+   display:inline-block;
+   position: relative;
+   font-size: 2.5vw;
+   padding-left: 2%;
+ }
+
+ .blockquote{
+   font-size: 4.5vw;
+   color: var(--darkgrey);
  }
 
 
@@ -174,13 +259,59 @@ img {
   align-items: center;
 }
 
+/* :root {
+  --base:              #f7392b;
+  --bg-blend:          multiply;
+  --blur:              0px;
+  --fg-blend:          lighten;
+  --foreground:        #16006f;
+  --opacity:           1;
+  --spacing:           1%;
+}
+.img-wrapper {
+  background-color:    var(--base);
+  display:             flex;
+  flex:                1 1 100%;
+  height:              100%;
+  overflow:            hidden;
+  padding:             var(--spacing);
+  position:            relative;
+}
+
+.img-wrapper img {
+  filter:              grayscale(100%) contrast(1) blur(var(--blur));
+  flex:                1 0 100%;
+  height:              100%;
+  max-width:           100%;
+  mix-blend-mode:      var(--bg-blend);
+  object-fit:          cover;
+  opacity:             var(--opacity);
+  position:            relative;
+  width:               100%;
+}
+
+.img-wrapper::before {
+  background-color:    var(--foreground);
+  bottom:              0;
+  content:             '';
+  height:              100%;
+  left:                0;
+  mix-blend-mode:      var(--fg-blend);
+  position:            absolute;
+  right:               0;
+  top:                 0;
+  width:               100%;
+  z-index:             1;
+} */
+
+
 /* FOOTNOTES */
 
 
 .footnote {
     text-decoration: none;
-    color: #006837;
-    background-color: #006837;
+    color: var(--brown);
+    background-color: var(--lila);
     padding: 0rem 5rem;
     border-radius: 10px;
     vertical-align:middle;

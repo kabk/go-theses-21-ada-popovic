@@ -1,6 +1,9 @@
 /////////////////////////////////
 // NEW DOCUMENT TITLE ON CLICK
 /////////////////////////////////
+function alert() {
+  alert("Hello! I am an alert box!");
+}
 
 var arrayTitles = [
 	"Phrenology Of Bookmarking",
@@ -24,11 +27,7 @@ var arrayTitles = [
 var randomTitle = arrayTitles[Math.floor(Math.random()*arrayTitles.length)];
 
 $("#box").one('click',function titleChange() {
-
-
-
 	document.getElementById("texty").innerHTML = randomTitle;
-
 });
 
 /////////////////////////////////
@@ -50,9 +49,15 @@ var cursor = true;
         }, speed);
 
 
+
 $("#box").one('click', function() {
     $("#placeholder").css("display", "none");
+		$("body").css("overflow-y", "auto");
+		$('.navigation').fadeIn(5000);
+		$('.epigraph').fadeIn(1000);
+		$('h2').toggleClass('bigmargin');
 });
+
 
 
 $("#box").one('click',function typing() {
@@ -137,9 +142,45 @@ typingEffect();
 	//
 	// });
 
+	/////////////////////////////////
+	// TABLE OF CONTENT
+	/////////////////////////////////
 
+	$(document).ready(function() {
+			$('a[href*=#]').bind('click', function(e) {
+					e.preventDefault(); // prevent hard jump, the default behavior
 
+					var target = $(this).attr("href"); // Set the target as variable
 
+					// perform animated scrolling by getting top-position of target-element and set it as scroll target
+					$('html, body').stop().animate({
+							scrollTop: $(target).offset().top
+					}, 600, function() {
+							location.hash = target; //attach the hash (#jumptarget) to the pageurl
+					});
+
+					return false;
+			});
+	});
+
+	$(window).scroll(function() {
+			var scrollDistance = $(window).scrollTop();
+
+			// Show/hide menu on scroll
+			//if (scrollDistance >= 850) {
+			//		$('nav').fadeIn("fast");
+			//} else {
+			//		$('nav').fadeOut("fast");
+			//}
+
+			// Assign active class to nav links while scolling
+			$('.page-section').each(function(i) {
+					if ($(this).position().top <= scrollDistance) {
+							$('.navigation a.active').removeClass('active');
+							$('.navigation a').eq(i).addClass('active');
+					}
+			});
+	}).scroll();
 
 
 // ///////////////////////////////

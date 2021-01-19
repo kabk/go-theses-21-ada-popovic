@@ -19,19 +19,36 @@
 <!-- ///////////////////////////////// -->
 
 <!-- Version with deleting-->
+<p>
+  <div id="box" class="box">
 
-<div id="box" class="box">
+      <img src="images/inputfieldemptybig.png" alt="">
+      <div class="flex">
+          <p class="header-sub-title placeholder" id="placeholder"><span id="cursor">|</span>Insert Title Here</p>
+        	<p class="header-sub-title" id="word"></p>
+        </div>
 
-    <img src="images/inputfieldemptybig.png" alt="">
-    <div class="flex">
-        <p class="header-sub-title placeholder" id="placeholder"><span id="cursor">|</span>Insert Title Here</p>
-      	<p class="header-sub-title" id="word"></p>
-      </div>
-
-</div>
+  </div>
+</p>
 
 <!-- Version with blinking cursor -->
 <!-- <span div class="titles" data-typer="Hi! My name is Al. I will guide you trough the Setup process."></span> -->
+<div class="navigation">
+  <a target="_blank" rel="noopener noreferrer" href="https://www.are.na/ada-popovic/the-bachelor-thesis-2020">
+    <div id="arenalink" class="arenalink">
+      <img src="images/logo_arena.png" alt="">
+    </div>
+  </a>
+
+  <div id="menu" class="menu"></div>
+</div>
+<!--
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <br/>
 <br/>
@@ -45,52 +62,24 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
+<br/> -->
 
 <!-- <h2>Epigraph</h2> -->
 
-<p class='epigraph'><em>Ordinary words convey only what we know already;</em>
-<em><br>it is from metaphor that we can best get hold of something fresh.</em>
-</p>
+<br/>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  <p class='epigraph'><em>Ordinary words convey only what we know already;</em>
+  <em><br>it is from metaphor that we can best get hold of something fresh.</em>
+  </p>
 
-<h2>The Memory Palace Race</h2>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<h2 class='transform' id="chapter1">The Memory Palace Race</h2>
 
 <p>How can you recognise a character gifted with an exceptional mind in a mainstream movie series? Simple. By their memory palace. Almost every fictional genius – Sherlock, Hannibal, Mentalist – will be portrayed as a master of the loci (latin for 'places') method. Visual possibilities of representing a Memory Palace on the screen or any other popular culture canvas made the proliferation of its concept into a viewer's mind quick and widespread.</p>
 
@@ -100,26 +89,13 @@
 </figure>
 
 <figure>
+  <div class="img-wrapper">
+  <!-- The `::before` pseudo-element will apear here in the Broweser(DOM) and in web-inspector. -->
   <img src="images/sherlock.gif" alt="">
-  <figcaption>BBC's visualisation of Sherlock visiting his Memory Palace</figcaption>
-</figure>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<div id="wrap">
-  <iframe id="frame" src="https://www.are.na/ada-popovic/thesis-chaotic-energy-channels/embed" scrolling="no" style="height: 500px; border: 0px none; width: 100vw; margin-top: -275px; margin-left: -32px; "></iframe>
 </div>
 
+  <figcaption>BBC's visualisation of Sherlock visiting his Memory Palace</figcaption>
+</figure>
 
 <p>However, the loci method is by no means a fruit of modern screenwriter's mind. It originated in the Ancient Greece (its invention and development is attributed to a Greek poet Simonides of Ceos), at a time where memory tied to a human mind, not to its paper or digital assistant, was held way more precious than it is today. It was the age of information learned by heart, but not for mere gimmicky show-off we see in modern movies. The Greece of Socrates was the kingdom of long-lost oral culture, the house of rhetoric as an artform. A place where memorising was considered to play a major part in the process of {formulating one's thoughts}. Contemporaries treated the human mind not as an information container, but as a crucible for calcination of new ideas <sup><a href="#fn1-30411" id="fnr1-30411" title="see footnote" class="footnote">1</a></sup>. </p>
 
@@ -171,7 +147,7 @@ That is hardly a surprise – non-physical memory palaces require a substantial 
 <p>About a century ago we have collectively gathered so much that not only a single mind, not a single notebook – a whole library wouldn't suffice to store it. An arrival of new informational era was in the air. The great minds of the time felt it and started designing their proposals. Almost a hundred years before the Web as we know it, the rising sea of information was calling for reconsideration of how the cognitive overload was managed. In 1934, Paul Otlet, a visionary archivist, saw it most clearly:</p>
 
 <blockquote>
-<p>Humanity is at a turning point in its history. The mass of available information is formidable. New instruments are necessary for simplifying and condensing it, or the intellect will never know how to overcome the difficulties which overwhelm it, nor realize the progress that it glimpses and to which it aspires.<sup><a href="#fn6-30411" id="fnr6-30411" title="see footnote" class="footnote">6</a></sup></p>
+<p class="blockquote">Humanity is at a turning point in its history. The mass of available information is formidable. New instruments are necessary for simplifying and condensing it, or the intellect will never know how to overcome the difficulties which overwhelm it, nor realize the progress that it glimpses and to which it aspires.<sup><a href="#fn6-30411" id="fnr6-30411" title="see footnote" class="footnote">6</a></sup></p>
 </blockquote>
 
 <p>Otlet, like Camillo before him, undertook another mission of recording and storing all of human knowledge in what he called Mundaneum. The partly realized space (initially localised in 150 rooms of the Palais du Cinquantenaire) was supposed to connect libraries, archives, governments, universities and individuals and through the Universal Decimal Classification organize and make available to the public the totality of human intellectual achievement. Similarly to what we see in Willard's sketches or Camillo's plans, Otlet wanted the architecture of the Mondotheque to reflect the organization of information stored within it. With the support of the Belgian government and collaboration with architectural giants (such as Le Corbusier), the project was supposed to be realized into a monumental ziggurat <sup><a href="#fn7-30411" id="fnr7-30411" title="see footnote" class="footnote">7</a></sup> – a physical temple of collective intellectual achievement. Nazi regime and the turbulent 1940s rendered the complete realisation of Mondotheque impossible and nowadays the grandeur of Otlet's legacy has been reduced to an archive and an exhibition space run by a non-profit organization in Mons, Belgium.</p>
@@ -202,7 +178,7 @@ That is hardly a surprise – non-physical memory palaces require a substantial 
 
 <p>One thing is for sure – no earthly philosophy could stop us from indulging in the prosthetic craze even further. As of 2020 Pinterest has 442 million monthly active users worldwide<sup><a href="#fn13-30411" id="fnr13-30411" title="see footnote" class="footnote">13</a></sup>. Heavily used and neatly organized notemaking software such as Evernote or Notion is a pride of any efficient enterpreneur. In the Internet Age each one of us can build their digital memory palace or online Mondotheque without being inhibited by physical space, architectural or financial constraints. Giulio Camillo Delminio could realize his 'Theatro Della Memoria' with a standard laptop and a decent Internet connection. And surely, similarly to us, regular web dwellers, he would take his chance in doing so.</p>
 
-<h2>Modern Bookmarking</h2>
+<h2 id="chapter2">Modern Bookmarking</h2>
 
 <p>Throughout the years bookmarking arose as the solution for effectively storing the material encountered online. The invention of a computer changed everything about information storage. The Desktop Metaphor took us from physical <em>folders</em> to 2D icons, from cork <em>boards</em> to their Pinterest descendants, from dreams of Memex and Mondotheque to reality. Instead of idiosyncratic methods for finding back the archived knowledge, everyone with a computer suddenly had an access to a retrievable and searchable ocean of information. </p>
 
@@ -355,7 +331,7 @@ Building a space is a grander gesture than pinning notes to a cork (or pixel) bo
 
 <p>It seems that Are.na is a platform that already takes some well-thought-through steps towards providing a structure that improves on its predecessors (such as Pinterest) and using its highly designer/researcher oriented userbase, opens more mindful ways of navigating the Internet. Furthermore, the channel names, which are the main focus point of the following analysis, seem to play a more central role on Are.na than on any other platform. A channel is not represented by a collage of miniatures of its contents, but by the name its creator gave it. Name is king. All the above mentioned arguments and perhaps a hint of personal bias (Are.na is my tool of choice for digital hoards) are the reasons behind the continuation of my analysis within the environment of Are.na.</p>
 
-<h2>Naming Systems Of Are.na</h2>
+<h2 id="chapter3">Naming Systems Of Are.na</h2>
 
 <p>Let us start with a formality of an introduction. What exactly is Are.na? It seems to be a phenomenon that even Are.na's very creators have always struggled to define. A whole open channel has been devoted to trying to characterise what the platform really is. In the description we can read a note from Charles Broskoski (one of many Are.na's founders):</p>
 
@@ -653,7 +629,7 @@ Building a space is a grander gesture than pinning notes to a cork (or pixel) bo
 
 <p>A name, class or category matters. Even in a seemingly insignificant environment of a bookmarking platform, it creates understanding, attachment and an atmosphere of importance that cannot go unnoticed. Name is a primary lens of cognition. Almost every human-to-human interaction starts with an introduction. In a culture where we coexist with computers mostly by means of language and more specifically, through categories we teach it, more than our singular perception is at stake. Our methods of labelling the world, with all their biases and idiosyncracies, will be inherited by AI and reproduced with mechanical speed. In a reality with such greed for automation, the learned classification will be quickly reflected back onto us – and carry risks of dangerous misunderstandings. That is why we need to look at our language critically. Scepticism towards generally accepted taxonomies is now more crucial than ever.</p>
 
-<h2>Taxonomy vs Folksonomy</h2>
+<h2 id="chapter4">Taxonomy vs Folksonomy</h2>
 
 <p>Even though a promising number of serendipitous names can be found within the Are.na platform, such trend is far from prevailing. Majority of bookmarking platforms, museums, online stores, audio services and encyclopaedias use a more or less universally recognisable categorisation for all of its holdings. We are a species with a strong desire for creating order. Classifying our surrounding in one way or another is an inherent part of human existence and survival. But standardised, universal categories were not always present. After the first (and quite inaccurate <sup><a href="#fn25-30411" id="fnr25-30411" title="see footnote" class="footnote">25</a></sup> concept of ranked classification of living organisms introduced by Aristotle<sup><a href="#fn26-30411" id="fnr26-30411" title="see footnote" class="footnote">26</a></sup> , many attempts at classifying the world around us and our knowledge of it were committed. However, the next crucial taxonomic breakthrough was the system created by Carl Linnaeus. It only arrived in the eighteenth century and took on dividing all the living species into precise taxonomic ranks of kingdoms descending into classes into orders and into species, resulting in familiar binomial nomenclature that we use till this day. Just a couple years later, in 1751-1772, Diderot's Encyclopédie with its controversial 'Figurative system of human knowledge' was published. The Encyclopédie was supposed to organize the totality of human knowledge under the Enlightenment's reign. Its controversy lied in how through the classification method the authors openly challenged the religious authority as non-scientific and requiring evidence. Through listing 'Religion' under 'Philosophy' the authors underlined that the matters of god are subject to human reason and not a source of knowledge in itself. Apart from that, most famously, the Encyclopédie presented a tree of knowledge with three main branches of 'Memory'/History, 'Reason'/Philosophy, and 'Imagination'/Poetry <sup><a href="#fn27-30411" id="fnr27-30411" title="see footnote" class="footnote">27</a></sup>.</p>
 
@@ -740,7 +716,7 @@ Lake Victoria (named after the Queen of Imperial Britain by the explorer John Ha
 
 <p>Both taxonomy and folksonomy have their own fallacies. Instead of following the notions of polarised society and choosing sides, we should wonder how the two methods of categorisation can be combined for most optimal result. The universe is complex, bizarre and experienced differently by each of its inhabitants, but it needs to be given some regular order, so that we can communicate about it, at least on a most basic level. Folksonomy comes forward as an approach that allows for a more independent and democratic attitude towards labelling, but also brings risks of chaos and lack of editorial filtration of possibly confusing results. Folksonomy, or social tagging, is a work that is uniquely human in its nature. As a user-defined method it evolves organically and helps in avoiding a world in which centralised knowledge structure reigns supreme. From a mixture of both we need to create a method that embraces the innate absurdity of the world, but at the same time retains the editorial expertise. We need to inject the ever-sorting machinal body with a little soul. We need neither a folksonomic jungle, nor a botanical laboratory of taxonomy. We need a garden of the in-between.</p>
 
-<h2>You Are Not A Container, You Are A Garden</h2>
+<h2 id="chapter5">You Are Not A Container, You Are A Garden</h2>
 
 <p>How do you perceive your own mind and memory? As more and more of us started interacting with machines on a daily basis, trying to translate our knowledge to their language, many have fallen into a belief that our own minds work analogically to a computational one. As Nicholas Carr mentioned in <em>The Shallows</em>:</p>
 
@@ -846,7 +822,7 @@ Lake Victoria (named after the Queen of Imperial Britain by the explorer John Ha
 
 <p>Garden-Mind is a mind that is patient, serendipitous, organic. It is not limited by zero-one thinking patterns of Machine-Mind. It isn't obsessed with containment. It isn't powered, it's alive. Only a machine suffers when there is no 0 or 1 value classification. Our creativity thrives on the unknown.</p>
 
-<h2>The Future is Medieval</h2>
+<h2 id="chapter6">The Future is Medieval</h2>
 
 <p>Nowadays, in our highly polarised society, we feel constant pressure to take sides. Whether it is a case of political orientation or soft drink preference, we exist under constant narrative of 'us vs them'. No space for fuzziness in our identity easily results in divisions, pettiness and conflict. The way we classify and name the world has a direct impact on this. The obsession with containment shapes our cognition. Operating on zero-one terms creates binary evaluations of our reality. </p>
 
@@ -915,53 +891,6 @@ Lake Victoria (named after the Queen of Imperial Britain by the explorer John Ha
 <p>I urge for taking the effort to name. Taxopoeticize your bookmarked collections. Name your wifi networks. Own your online presence. Create personal relation to a digital memory through giving it a label that you care about. Be hungry for serendipitous juxtapositions. To name is to dare to care. Perhaps it is through the seemingly unimportant gesture of labelling that we can successfully facilitate the emergence of a more expansive reality. </p>
 
 <p>And if not – at least the index won't boring.</p>
-
-
-
-
-
-
-
-
-
-<!-- POSTACARD -->
-
-<h2>Serendip Travel Agnecy</h2>
-
-<figure>
-<img src="images/serendip.jpg" alt="" />
-</figure>
-
-<p>Start your </p>
-
-<blockquote>
-<p>Creative deterritorialisation into the realm of categorical affects (affect)</p>
-</blockquote>
-
-<p>Today!!!</p>
-
-<p>Go to the</p>
-
-<blockquote>
-<p><em>a southern land of spice and warmth, lush greenery and hummingbirds, seawashed, sunbasted?</em> <sup><a href="#fn63-30411" id="fnr63-30411" title="see footnote" class="footnote">63</a></sup></p>
-</blockquote>
-
-<p>Settle in a digital and mental garden of Serendip<sup><a href="#fn64-30411" id="fnr64-30411" title="see footnote" class="footnote">64</a></sup>. Move to the forest of your subconscious.</p>
-
-<p>Leave the prosthetic cubicle behind!</p>
-
-<p>Serendipity is tied to the idea of mind as a flourishing garden by means of its very etymology: The Serendip Island. </p>
-
-<figure>
-<img src="images/srilanks.jpg" alt="" />
-</figure>
-
-
-
-
-
-
-
 
 
 
