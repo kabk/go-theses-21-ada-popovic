@@ -1,6 +1,8 @@
 /////////////////////////////////
 // NEW DOCUMENT TITLE ON CLICK
 /////////////////////////////////
+
+
 function alert() {
   alert("Hello! I am an alert box!");
 }
@@ -57,6 +59,13 @@ $("#box").one('click', function() {
 		$('.epigraph').fadeIn(1000);
 		$('h2').toggleClass('bigmargin');
 });
+
+$("#menu").click(function() {
+		$("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+});
+
 
 
 
@@ -119,10 +128,8 @@ function deletingEffect() {
 
 typingEffect();
 
-
-
-
 });
+
 
 //Version with blinking cursor
 
@@ -145,6 +152,7 @@ typingEffect();
 	/////////////////////////////////
 	// TABLE OF CONTENT
 	/////////////////////////////////
+
 
 	$(document).ready(function() {
 			$('a[href*=#]').bind('click', function(e) {
