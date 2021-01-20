@@ -2,11 +2,6 @@
 // NEW DOCUMENT TITLE ON CLICK
 /////////////////////////////////
 
-
-function alert() {
-  alert("Hello! I am an alert box!");
-}
-
 var arrayTitles = [
 	"Phrenology Of Bookmarking",
 	"Folksonomic Machine In The Post-Taxonomic Garden",
@@ -61,9 +56,12 @@ $("#box").one('click', function() {
 });
 
 $("#menu").click(function() {
-		$("#div1").fadeIn();
-    $("#div2").fadeIn("slow");
-    $("#div3").fadeIn(3000);
+		$("#menu-chapter-1").fadeIn();
+    $("#menu-chapter-2").fadeIn(500);
+    $("#menu-chapter-3").fadeIn(1000);
+    $("#menu-chapter-4").fadeIn(1500);
+    $("#menu-chapter-5").fadeIn(2000);
+    $("#menu-chapter-6").fadeIn(2500);
 });
 
 
