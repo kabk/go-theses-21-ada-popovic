@@ -286,7 +286,8 @@ figure {
 /*////////////////////////////////*/
 iframe{
   width:100%;
-  transform: scale(1.5);
+  height: 500px;
+  /* transform: scale(1.5); */
 }
 
 
