@@ -56,12 +56,30 @@ $("#box").one('click', function() {
 });
 
 $("#menu").click(function() {
-		$("#menu-chapter-1").fadeIn();
-    $("#menu-chapter-2").fadeIn(500);
-    $("#menu-chapter-3").fadeIn(1000);
-    $("#menu-chapter-4").fadeIn(1500);
-    $("#menu-chapter-5").fadeIn(2000);
-    $("#menu-chapter-6").fadeIn(2500);
+		$("#menu-chapter-1").fadeToggle(3000);
+    $("#menu-chapter-2").fadeToggle(2500);
+    $("#menu-chapter-3").fadeToggle(2000);
+    $("#menu-chapter-4").fadeToggle(1500);
+    $("#menu-chapter-5").fadeToggle(1000);
+    $("#menu-chapter-6").fadeToggle(500);
+});
+
+// $("#menu").click(function() {
+// 		$("#menu-chapter-1").fadeToggle(500);
+//     $("#menu-chapter-2").fadeToggle(1000);
+//     $("#menu-chapter-3").fadeToggle(1500);
+//     $("#menu-chapter-4").fadeToggle(2000);
+//     $("#menu-chapter-5").fadeToggle(2500);
+//     $("#menu-chapter-6").fadeToggle(3000);
+// });
+
+$(".menu-chapter").click(function() {
+		$("#menu-chapter-1").fadeOut(500);
+    $("#menu-chapter-2").fadeOut(1000);
+    $("#menu-chapter-3").fadeOut(1500);
+    $("#menu-chapter-4").fadeOut(2000);
+    $("#menu-chapter-5").fadeOut(2500);
+    $("#menu-chapter-6").fadeOut(3000);
 });
 
 
@@ -290,3 +308,22 @@ function createSvgFilters (hex,i) {
         img.setAttribute('style','filter: url('+ filterName +')');
     });
 })();
+
+
+
+const links = document.querySelectorAll(".page-header ul a");
+
+for (const link of links) {
+  link.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
