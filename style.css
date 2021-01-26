@@ -495,3 +495,27 @@ img {
 ol{
   display: none;
 }
+
+.svg-filter {
+  display: none;
+}
+
+.final-text{
+  width: 100%;
+
+  padding-top: 30%;
+  padding-bottom: 10%;
+
+}
+
+.name {
+  font-family: var(--forma);
+   float: left;
+   font-size: 4vw;
+}
+
+.date {
+  font-family: var(--forma);
+  float: right;
+  font-size: 4vw;
+}
