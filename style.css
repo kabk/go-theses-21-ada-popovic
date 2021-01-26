@@ -205,6 +205,12 @@ div.navigation {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 2%;
+  /* -webkit-text-stroke: 0.5px black; */
+}
+
+.menu-chapter-opacity {
+  opacity: 80%;
 }
 
 /*////////////////////////////////*/

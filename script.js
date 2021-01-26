@@ -56,12 +56,12 @@ $("#box").one('click', function() {
 });
 
 $("#menu").click(function() {
-		$("#menu-chapter-1").fadeToggle(3000);
-    $("#menu-chapter-2").fadeToggle(2500);
-    $("#menu-chapter-3").fadeToggle(2000);
-    $("#menu-chapter-4").fadeToggle(1500);
-    $("#menu-chapter-5").fadeToggle(1000);
-    $("#menu-chapter-6").fadeToggle(500);
+		$("#menu-chapter-1").fadeToggle(1200);
+    $("#menu-chapter-2").fadeToggle(1000);
+    $("#menu-chapter-3").fadeToggle(800);
+    $("#menu-chapter-4").fadeToggle(600);
+    $("#menu-chapter-5").fadeToggle(400);
+    $("#menu-chapter-6").fadeToggle(200);
 });
 
 // $("#menu").click(function() {
@@ -74,12 +74,12 @@ $("#menu").click(function() {
 // });
 
 $(".menu-chapter").click(function() {
-		$("#menu-chapter-1").fadeOut(500);
-    $("#menu-chapter-2").fadeOut(1000);
-    $("#menu-chapter-3").fadeOut(1500);
-    $("#menu-chapter-4").fadeOut(2000);
-    $("#menu-chapter-5").fadeOut(2500);
-    $("#menu-chapter-6").fadeOut(3000);
+		$("#menu-chapter-1").fadeOut(200);
+    $("#menu-chapter-2").fadeOut(400);
+    $("#menu-chapter-3").fadeOut(600);
+    $("#menu-chapter-4").fadeOut(800);
+    $("#menu-chapter-5").fadeOut(1000);
+    $("#menu-chapter-6").fadeOut(1200);
 });
 
 
