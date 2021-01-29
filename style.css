@@ -363,20 +363,24 @@ iframe{
 They are supposed to be reminiscent of Are.na's text blocks*/
  blockquote{
    align-items: center;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
    background-color: white;
    border: 5px solid var(--lightgrey);
 
    overflow-x: scroll;
    width: 800px;
    height: 800px;
-   display:inline-block;
+   /* display:inline-block; */
    position: relative;
    font-size: 2.5vw;
    padding-left: 2%;
+
  }
 
  .blockquote{
-   font-size: 4.5vw;
+   font-size: 4vw;
    color: var(--darkgrey);
  }
 
@@ -384,8 +388,9 @@ They are supposed to be reminiscent of Are.na's text blocks*/
 /* IMAGES
 General images has to be full width, but later the embeds and are.na screenshots have to be smaller or different in some way  */
 img {
-  width: 100%;
+  width: 101%;
   align-items: center;
+  margin-left: -1%;
 }
 
 .container {
@@ -517,11 +522,45 @@ ol{
 .name {
   font-family: var(--forma);
    float: left;
-   font-size: 4vw;
+   font-size: 5vw;
 }
 
 .date {
   font-family: var(--forma);
   float: right;
+  font-size: 5vw;
+}
+
+.thanks {
+  font-family: var(--forma);
+  text-align: left;
+  font-size: 4vw;
+}
+
+.column1{
+  margin-left: 3vw;
+  width: 50vw;
+}
+
+.column2{
+  margin-left: 3vw;
+  width: 1vw;
+}
+.column3{
+  margin-left: 3vw;
+  width: 49vw;
+}
+
+
+.table-person {
+  margin-left: 3vw;
+  font-family: var(--forma);
+  font-size: 5vw;
+}
+
+.table-thanks {
+  height: 100px;
+  margin-left: 3vw;
+  font-family: var(--text);
   font-size: 4vw;
 }
